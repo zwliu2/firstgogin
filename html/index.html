@@ -49,7 +49,7 @@
             $("#btn").click(function () {
                 if (geturl !== '' || geturl !== 'null'){
                     $.ajax({
-                        url: "http://127.0.0.1:81/parse",
+                        url: "https://parse.gugud.com/parse",
                         contentType: "application/json;",
                         type: "POST",
                         data: JSON.stringify(GetJsonData()),

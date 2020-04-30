@@ -1,5 +1,5 @@
-FROM aionnect/alpine-ffmpeg
+FROM centos
 WORKDIR /usr/src
 COPY . . 
 EXPOSE 81
-ENTRYPOINT ["./main"]
+CMD ["./main"]
