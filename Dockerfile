@@ -1,6 +1,5 @@
 FROM aionnect/alpine-ffmpeg
-WORKDIR /parsehtml
-COPY . .
-RUN chmod +x /parsehtml/main
-EXPOSE 80
+WORKDIR /usr/src
+COPY . . 
+EXPOSE 81
 ENTRYPOINT ["./main"]
